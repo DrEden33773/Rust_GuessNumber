@@ -53,6 +53,4 @@ fn main() {
     }
     println!();
     println!("游戏结束！");
-    // 程序结束
-    println!();
 }
