@@ -8,7 +8,7 @@ fn main() {
     println!("猜数游戏");
     println!();
     // generate a random number between 1 and 100
-    let secret_number: i32 = rand::thread_rng().gen_range(1..101);
+    let secret_number: i32 = rand::thread_rng().gen_range(1..=100);
     println!("猜数游戏开始！");
     loop {
         let mut input = String::new();
