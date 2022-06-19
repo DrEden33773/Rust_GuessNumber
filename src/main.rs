@@ -17,7 +17,9 @@ fn main() {
             println!();
             println!("请输入你的猜测：");
             match io::stdin().read_line(&mut input) {
-                Ok(_) => break,
+                Ok(_) => {
+                    break;
+                }
                 Err(_) => {
                     println!("读取输入失败！请重新输入！");
                     continue;
@@ -42,12 +44,10 @@ fn main() {
             // if var_input is less than secret_number
             Ordering::Less => {
                 println!("你猜的数字小了！请重新猜测！");
-                continue;
             }
             // if var_input is greater than secret_number
             Ordering::Greater => {
                 println!("你猜的数字大了！请重新猜测！");
-                continue;
             }
         }
     }
