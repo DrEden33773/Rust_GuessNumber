@@ -28,7 +28,7 @@ fn main() {
         }
         // convert input to number
         let var_input: i32 = match input.trim().parse() {
-            Ok(num) => num,
+            Ok(number) => number,
             Err(_) => {
                 println!("你没有输入一个纯数字！请重新输入！");
                 continue;
